@@ -11,7 +11,6 @@ int find_max(int *v,int n){
     if(n == 1){
         return v[0];
     }
+    //compara o ultimo da 1 array com o ultimo da segunda array,devolve o maior...compara esse maior com o ultimo da 3...
     return max(v[n-1],find_max(v,n-1));
 }
-
-
